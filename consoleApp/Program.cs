@@ -34,6 +34,7 @@ namespace EFPosgres.consoleApp
                 options.UseNpgsql(constr, b => b.MigrationsAssembly(migrationsAssembly)));
 
             var serviceProvider = services.BuildServiceProvider();
+            var bdConf = configuration.GetSection("Bildoktoren");
 
             var ctx = serviceProvider.GetService<BloggingContext>();
             var blogs = ctx.Blogs.ToList();
