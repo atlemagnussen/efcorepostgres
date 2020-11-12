@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "datastore", "datastore\data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web", "web\web.csproj", "{F11DC7B0-41C9-43EB-A5A8-649F8F2CD9D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "model", "model\model.csproj", "{1F350C8B-ECDA-4F75-9247-96F3F71DEAAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{F11DC7B0-41C9-43EB-A5A8-649F8F2CD9D3}.Release|x64.Build.0 = Release|Any CPU
 		{F11DC7B0-41C9-43EB-A5A8-649F8F2CD9D3}.Release|x86.ActiveCfg = Release|Any CPU
 		{F11DC7B0-41C9-43EB-A5A8-649F8F2CD9D3}.Release|x86.Build.0 = Release|Any CPU
+		{1F350C8B-ECDA-4F75-9247-96F3F71DEAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F350C8B-ECDA-4F75-9247-96F3F71DEAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F350C8B-ECDA-4F75-9247-96F3F71DEAAA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1F350C8B-ECDA-4F75-9247-96F3F71DEAAA}.Debug|x64.Build.0 = Debug|Any CPU
+		{1F350C8B-ECDA-4F75-9247-96F3F71DEAAA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1F350C8B-ECDA-4F75-9247-96F3F71DEAAA}.Debug|x86.Build.0 = Debug|Any CPU
+		{1F350C8B-ECDA-4F75-9247-96F3F71DEAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F350C8B-ECDA-4F75-9247-96F3F71DEAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F350C8B-ECDA-4F75-9247-96F3F71DEAAA}.Release|x64.ActiveCfg = Release|Any CPU
+		{1F350C8B-ECDA-4F75-9247-96F3F71DEAAA}.Release|x64.Build.0 = Release|Any CPU
+		{1F350C8B-ECDA-4F75-9247-96F3F71DEAAA}.Release|x86.ActiveCfg = Release|Any CPU
+		{1F350C8B-ECDA-4F75-9247-96F3F71DEAAA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

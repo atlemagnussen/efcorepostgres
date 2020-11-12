@@ -9,7 +9,7 @@ using datastore;
 namespace web.Migrations
 {
     [DbContext(typeof(BloggingContext))]
-    [Migration("20201111225252_InitialCreate")]
+    [Migration("20201112072647_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,7 +20,7 @@ namespace web.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("datastore.Blog", b =>
+            modelBuilder.Entity("model.Blog", b =>
                 {
                     b.Property<int>("BlogId")
                         .ValueGeneratedOnAdd()
@@ -35,7 +35,7 @@ namespace web.Migrations
                     b.ToTable("Blogs");
                 });
 
-            modelBuilder.Entity("datastore.Post", b =>
+            modelBuilder.Entity("model.Post", b =>
                 {
                     b.Property<int>("PostId")
                         .ValueGeneratedOnAdd()
@@ -58,9 +58,9 @@ namespace web.Migrations
                     b.ToTable("Posts");
                 });
 
-            modelBuilder.Entity("datastore.Post", b =>
+            modelBuilder.Entity("model.Post", b =>
                 {
-                    b.HasOne("datastore.Blog", "Blog")
+                    b.HasOne("model.Blog", "Blog")
                         .WithMany("Posts")
                         .HasForeignKey("BlogId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -69,7 +69,7 @@ namespace web.Migrations
                     b.Navigation("Blog");
                 });
 
-            modelBuilder.Entity("datastore.Blog", b =>
+            modelBuilder.Entity("model.Blog", b =>
                 {
                     b.Navigation("Posts");
                 });
