@@ -1,5 +1,5 @@
 ﻿using System;
-
+using datastore;
 namespace EFPosgres.consoleApp
 {
     class Program

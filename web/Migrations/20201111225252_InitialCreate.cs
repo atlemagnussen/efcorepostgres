@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace EFPosgres.consoleApp.Migrations
+namespace web.Migrations
 {
     public partial class InitialCreate : Migration
     {
@@ -11,9 +11,9 @@ namespace EFPosgres.consoleApp.Migrations
                 name: "Blogs",
                 columns: table => new
                 {
-                    BlogId = table.Column<int>(nullable: false)
+                    BlogId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Url = table.Column<string>(nullable: true)
+                    Url = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -24,11 +24,11 @@ namespace EFPosgres.consoleApp.Migrations
                 name: "Posts",
                 columns: table => new
                 {
-                    PostId = table.Column<int>(nullable: false)
+                    PostId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Title = table.Column<string>(nullable: true),
-                    Content = table.Column<string>(nullable: true),
-                    BlogId = table.Column<int>(nullable: false)
+                    Title = table.Column<string>(type: "text", nullable: true),
+                    Content = table.Column<string>(type: "text", nullable: true),
+                    BlogId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
