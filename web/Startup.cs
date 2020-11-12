@@ -30,7 +30,7 @@ namespace web
             var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
             var constr = Configuration.GetConnectionString("BdContext");
             services.AddDbContext<BloggingContext>(options =>
-                options.UseNpgsql(constr, sql => sql.MigrationsAssembly(migrationsAssembly)));
+                options.UseNpgsql(constr, b => b.MigrationsAssembly(migrationsAssembly)));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
